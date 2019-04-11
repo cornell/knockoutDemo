@@ -1,0 +1,20 @@
+.Notification {
+    border: solid 1px black;
+    width: 200px;
+}
+
+.ProgressBar {
+    height: 5px;
+    background-color: lightgray;
+}
+
+.ProgressBar-value {
+    height: 5px;
+    
+    &.is-info {
+        background-color: lightskyblue;
+    }
+    &.is-success {
+        background-color: green;
+    }
+}

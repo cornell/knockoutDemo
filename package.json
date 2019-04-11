@@ -9,10 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "knockout": "^3.5.0"
+    "knockout": "^3.5.0",
+    "npm": "^6.9.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.18.0"
   }
 }

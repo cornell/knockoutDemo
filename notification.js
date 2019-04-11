@@ -1,6 +1,6 @@
 import ko from 'knockout';
 
-ko.components.register('like-widget', {
+ko.components.register('purge-notification', {
     viewModel: function(params) {
         // Data: value is either null, 'like', or 'dislike'
         // this.title = params.viewModel;
@@ -11,6 +11,10 @@ ko.components.register('like-widget', {
         // this.dislike = function() { this.chosenValue('dislike'); }.bind(this);
     },
     template:
-        '<div class="like-or-dislike" data-bind="text: title">\
-        </div>'
+        '<div class="Notification" >' +
+            '<div data-bind="text: title"></div>' +
+            '<div class="ProgressBar">' +
+                '<div data-bind="class: progressStatus, style:{width: progress + \'%\'}"></div>' +
+            '</div>' +
+        '</div>'
 });
